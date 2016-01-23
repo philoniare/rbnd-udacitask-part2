@@ -6,20 +6,13 @@ class TodoItem
     @description = description
     @due = options[:due] ? Date.parse(options[:due]) : options[:due]
     @priority = options[:priority]
-  end
-  def format_date
-    @due ? @due.strftime("%D") : "No due date"
-  end
-  def format_priority
-    value = " ⇧" if @priority == "high"
-    value = " ⇨" if @priority == "medium"
-    value = " ⇩" if @priority == "low"
-    value = "" if !@priority
-    return value
+    if (not (priority == "high" or priority == "medium" or priority == "low"))
+        raise UdaciListErrors::InvalidPriorityValue, "Invalid Priority Type"
+    end
   end
   def details
     format_description(@description) + "due: " +
-    format_date +
-    format_priority
+    format_date(@due, task: "todo") +
+    format_priority(@priority)
   end
 end
