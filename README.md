@@ -14,5 +14,3 @@ As projects get larger, and more complex, scalability and organization can becom
     * Wrote a method `list.filter(item_type)` that takes an `item_type` as input and returns only list items of that type if they exist, or alerts the user if there aren't any items of that type.
     * Added command-line I/O class for adding new items and creating new lists
     * Allow for the deletion of multiple items
-    * Created a new item type 'meeting'
-    * Added a alert class that can be set to generate alerts 
