@@ -1,13 +1,30 @@
 # What you added to Udacitask 2.0
 # -------------------------------------------------------
 1. What is the gem of your choice and how did you use it?
+I have used highline for command-line I/O
 2. Describe the 2 features you added to the project.
-  a) Feature 1...
-  b) Feature 2...
+  a) Added command-line I/O class for adding new items and creating new lists
+  b) Allow for the deletion of multiple items
+  c) Created a new item type 'meeting'
+  d) Added a alert class that can be set to generate alerts
 
 # REFLECTIONS
 # -------------------------------------------------------
 1. How long did you spend working on this project?
+An hour and half
 2. What was the most rewarding challenge you conquered?
+Expanding and adding new features without worries or moving fast thanks to a
+strong foundation of making good design decisions early on that makes changes
+easier afterwards.
 3. What two additional features did you build? Why?
+a) Added command-line I/O class for adding new items and creating new lists
+    The current app had manual task entry and users wouldn't want to edit the
+    code to add a task. The command-line becomes a simple front-end for that.
+b) Allow for the deletion of multiple items
+    Gets a command-separated ids for deleting multiple items
+c) Created a new item type 'meeting'
+    Meetings different from events in quite a few aspects and to adding
+    further functionality will be easier when we have separate class for 'meetings'
+d) Added a alert class that can be set to generate alerts
 4. Where do you still have room to grow?
+The user interface could be improved and data could also be persisted.

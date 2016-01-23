@@ -1,6 +1,6 @@
 module Listable
-  def format_description(description)
-      "#{description}".ljust(30)
+  def format_description(description, task_type)
+      "#{description} - #{task_type} ".ljust(35)
   end
   def format_date(date, options={})
       task = options[:task]
